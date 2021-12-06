@@ -11,7 +11,7 @@ const User=require('./models/user.js')
 const methodOverride = require('method-override');
 const { db } = require('./models/user.js');
 
-mongoose.connect('mongodb://localhost:27017/login-signup')
+mongoose.connect(process.env.MONGO_URL)
     .then(() => console.log('DB Connected'))
     .catch((err) => console.log(err));
 
