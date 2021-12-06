@@ -72,6 +72,6 @@ app.get('/info',async (req,res)=>{
 // }
 })
 
-app.listen(2323,(req,res)=>{
+app.listen(process.env.PORT || 2323,(req,res)=>{
     console.log("server running at port 2323");
 })
