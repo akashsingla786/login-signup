@@ -60,7 +60,7 @@ app.get('/info',async (req,res)=>{
         // console.log(element);
         if(element.name===name && element.password===password){
             console.log("login.......");
-            res.redirect(' https://software-smashers.herokuapp.com/');
+            res.redirect('https://software-smashers.herokuapp.com/');
         }
         
     });
